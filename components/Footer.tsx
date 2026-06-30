@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
             <div className={styles.brand}>
               <Hexagon size={22} className={styles.brandIcon} />
-              <span>CryptoLaunch</span>
+              <span>Zeeme ERC20</span>
             </div>
             <p className={styles.brandText}>
               Professional ERC20 token creation and deployment services for
@@ -99,9 +99,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className={styles.bottom}>
-          © CryptoLaunch. All rights reserved.
-        </div>
+        <div className={styles.bottom}>© Zeeme_ERC20. All rights reserved.</div>
       </div>
     </footer>
   );

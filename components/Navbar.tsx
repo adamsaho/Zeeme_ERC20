@@ -29,13 +29,13 @@ export default function Navbar() {
         <Link href="/" className={styles.logo} onClick={closeMenu}>
           <Image
             src="/logo.jpg"
-            alt="CryptoLaunch Logo"
+            alt="Zeeme_ERC20 Logo"
             width={36}
             height={36}
             className={styles.logoImage}
             priority
           />
-          <span>CryptoLaunch</span>
+          <span>Zeeme ERC20</span>
         </Link>
 
         <nav className={styles.navLinks} aria-label="Primary navigation">
