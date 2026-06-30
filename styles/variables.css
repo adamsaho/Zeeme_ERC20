@@ -1,0 +1,64 @@
+:root {
+  /* Color palette */
+  --color-bg: #050816;
+  --color-bg-secondary: #0f172a;
+  --color-card: #111827;
+  --color-primary: #00f5ff;
+  --color-secondary: #7c3aed;
+  --color-accent: #14f195;
+  --color-text: #ffffff;
+  --color-text-muted: #94a3b8;
+
+  /* Derived / utility colors */
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-strong: rgba(255, 255, 255, 0.16);
+  --color-glass-bg: rgba(15, 23, 42, 0.55);
+  --color-card-hover: #161f33;
+  --color-danger: #ff5c7a;
+  --color-success: #14f195;
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  --gradient-accent: linear-gradient(135deg, var(--color-accent), var(--color-primary));
+  --gradient-bg-glow: radial-gradient(
+      circle at 20% 20%,
+      rgba(0, 245, 255, 0.12),
+      transparent 40%
+    ),
+    radial-gradient(circle at 80% 0%, rgba(124, 58, 237, 0.16), transparent 45%),
+    radial-gradient(circle at 50% 100%, rgba(20, 241, 149, 0.08), transparent 40%);
+
+  /* Typography */
+  --font-display: "Sora", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "Courier New", monospace;
+
+  /* Spacing scale */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+  /* Shadows / glows */
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --glow-primary: 0 0 24px rgba(0, 245, 255, 0.35);
+  --glow-accent: 0 0 24px rgba(20, 241, 149, 0.3);
+  --glow-secondary: 0 0 24px rgba(124, 58, 237, 0.35);
+
+  /* Layout */
+  --container-width: 1200px;
+  --navbar-height: 76px;
+
+  /* Transitions */
+  --transition-fast: 0.18s ease;
+  --transition-base: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}

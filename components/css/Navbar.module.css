@@ -1,0 +1,158 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: var(--navbar-height);
+  display: flex;
+  align-items: center;
+  background: var(--color-glass-bg);
+  backdrop-filter: blur(16px) saturate(140%);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  border-bottom: 1px solid var(--color-border);
+  transition: background var(--transition-base), border-color var(--transition-base);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: -0.01em;
+}
+
+.logoIcon {
+  color: var(--color-primary);
+  filter: drop-shadow(0 0 8px rgba(0, 245, 255, 0.6));
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.navLink {
+  position: relative;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  transition: color var(--transition-fast);
+  padding: 0.25rem 0;
+}
+
+.navLink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: var(--gradient-primary);
+  transition: width var(--transition-base);
+  border-radius: var(--radius-pill);
+}
+
+.navLink:hover {
+  color: var(--color-text);
+}
+
+.navLink:hover::after,
+.navLinkActive::after {
+  width: 100%;
+}
+
+.navLinkActive {
+  color: var(--color-text);
+}
+
+.rightSide {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.menuButton {
+  display: none;
+  padding: 0.5rem;
+  color: var(--color-text);
+}
+
+.mobileMenu {
+  position: fixed;
+  top: var(--navbar-height);
+  left: 0;
+  right: 0;
+  background: var(--color-bg-secondary);
+  border-bottom: 1px solid var(--color-border);
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height var(--transition-base);
+}
+
+.mobileMenuOpen {
+  max-height: 360px;
+}
+
+.mobileMenuInner {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-md);
+  gap: var(--space-sm);
+}
+
+.mobileLink {
+  padding: 0.75rem var(--space-sm);
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  color: var(--color-text-muted);
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.mobileLink:hover {
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--color-text);
+}
+
+@media (max-width: 860px) {
+  .navLinks,
+  .rightSide .desktopCta {
+    display: none;
+  }
+
+  .menuButton {
+    display: inline-flex;
+  }
+}
+
+
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.logoImage {
+  border-radius: 50%; /* Remove if your logo is square */
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.logo span {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-color);
+}

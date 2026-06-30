@@ -1,0 +1,8 @@
+.headerSection {
+  padding-top: calc(var(--navbar-height) + var(--space-xl));
+}
+
+.wrapper {
+  max-width: 720px;
+  margin: 0 auto;
+}

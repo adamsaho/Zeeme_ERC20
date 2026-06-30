@@ -1,0 +1,3 @@
+.headerSection {
+  padding-top: calc(var(--navbar-height) + var(--space-xl));
+}

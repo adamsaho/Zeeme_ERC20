@@ -1,0 +1,88 @@
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+}
+
+.ctaSection {
+  position: relative;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, var(--color-card), var(--color-bg-secondary));
+  border: 1px solid var(--color-border-strong);
+  padding: var(--space-2xl) var(--space-lg);
+  text-align: center;
+  overflow: hidden;
+}
+
+.ctaSection::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-bg-glow);
+  opacity: 0.8;
+}
+
+.ctaContent {
+  position: relative;
+  z-index: 1;
+}
+
+.ctaTitle {
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  margin-bottom: var(--space-sm);
+}
+
+.ctaSubtitle {
+  color: var(--color-text-muted);
+  max-width: 480px;
+  margin: 0 auto var(--space-lg);
+}
+
+.processGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+}
+
+.processCard {
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  position: relative;
+}
+
+.processNumber {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+  display: inline-block;
+}
+
+.processTitle {
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+}
+
+.processDescription {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 960px) {
+  .servicesGrid,
+  .processGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .servicesGrid,
+  .processGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
