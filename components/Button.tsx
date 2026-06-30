@@ -1,6 +1,6 @@
 import { ButtonHTMLAttributes, ReactNode } from "react";
 import Link from "next/link";
-import styles from "./git push -u origin mainButton.module.css";
+import styles from "./css/Button.module.css";
 
 type ButtonVariant = "primary" | "secondary" | "ghost";
 type ButtonSize = "sm" | "md" | "lg";
